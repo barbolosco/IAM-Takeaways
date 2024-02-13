@@ -25,6 +25,7 @@
   * [Website structure](our-project/website-structure.md)
   * [Tools used](our-project/tools-used/README.md)
     * [🔑 Keycloak](our-project/tools-used/keycloak/README.md)
+      * [flow management](our-project/tools-used/keycloak/flow-management.md)
       * [authorization code flow](our-project/tools-used/keycloak/authorization-code-flow.md)
     * [🪶 Apache lounge](our-project/tools-used/apache-lounge.md)
     * [🐬 My sql](our-project/tools-used/my-sql.md)
