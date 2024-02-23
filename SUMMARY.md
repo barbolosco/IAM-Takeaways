@@ -31,6 +31,7 @@
     * [Install without docker (standalone)](keycloak/tutorials/install-without-docker-standalone.md)
     * [keycloak.conf guide](keycloak/tutorials/keycloak.conf-guide.md)
     * [Keycloak in js](keycloak/tutorials/keycloak-in-js/README.md)
+      * [PKCE implementation](keycloak/tutorials/keycloak-in-js/pkce-implementation.md)
       * [js flows](keycloak/tutorials/keycloak-in-js/js-flows.md)
     * [📬 Postman](keycloak/tutorials/postman.md)
 * [Our project](our-project/README.md)
