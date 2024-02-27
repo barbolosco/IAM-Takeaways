@@ -36,6 +36,7 @@
     * [Keycloak in js](keycloak/tutorials/keycloak-in-js/README.md)
       * [PKCE implementation](keycloak/tutorials/keycloak-in-js/pkce-implementation.md)
       * [js flows](keycloak/tutorials/keycloak-in-js/js-flows.md)
+    * [CORS and CSP](keycloak/tutorials/cors-and-csp.md)
     * [📬 Postman](keycloak/tutorials/postman.md)
 * [Our project](our-project/README.md)
   * [Website structure](our-project/website-structure.md)
