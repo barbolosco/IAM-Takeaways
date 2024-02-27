@@ -7,7 +7,7 @@
    * Log in with administrative credentials.
 2. **Create a new realm:**
    * Click the "master" realm name in the top-left corner.
-   * Select "Create Realm" from the menu.
+   * Select "Create a Realm" from the menu.
 3. **Configure the realm:**
    * **Realm name:** Enter a unique name for your realm (e.g., "myrealm").
    * **Display name:** Optional, provide a user-friendly name for the realm (e.g., "My Realm").

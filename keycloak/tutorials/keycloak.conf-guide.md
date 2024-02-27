@@ -1,6 +1,6 @@
 # keycloak.conf guide
 
-## Setting up Database Connection
+## Setting up the database connection
 
 To configure the database connection for Keycloak, follow these steps:
 
@@ -14,14 +14,14 @@ To configure the database connection for Keycloak, follow these steps:
 Example:
 
 ```conf
-confCopy code# Database
+# Database
 db=postgres
 db-username=myuser
 db-password=mypassword
 db-url=jdbc:postgresql://localhost/mydatabase
 ```
 
-#### Note: You might want to to configure a native database for exemple mysql instead of the native postgress.
+#### Note: You might want to configure a native database for example Mysql instead of the native Postgress.
 
 ```
 #database vendor
@@ -46,12 +46,12 @@ To enable healthcheck and metrics endpoints for observability, follow these step
 Example:
 
 ```conf
-confCopy code# Observability
+# Observability
 health-enabled=true
 metrics-enabled=true
 ```
 
-## Configuring HTTPS Settings
+## Configuring HTTPS settings
 
 To configure HTTPS settings and hostname for the Keycloak server, follow these steps:
 
@@ -65,7 +65,7 @@ To configure HTTPS settings and hostname for the Keycloak server, follow these s
 Example:
 
 ```conf
-confCopy code# HTTP
+# HTTP
 https-certificate-file=/path/to/server.crt.pem
 https-certificate-key-file=/path/to/server.key.pem
 hostname=myhostname

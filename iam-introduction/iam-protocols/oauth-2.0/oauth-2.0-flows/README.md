@@ -2,7 +2,7 @@
 
 **OAuth 2.0 Flow**
 
-In the OAuth 2.0 flow, the process involves several steps to ensure secure access to resources. Here's some key concepts present in every flow type:
+In the OAuth 2.0 flow, the process involves several steps to ensure secure access to resources. Here are some key concepts present in every flow type:
 
 **Authorization Request:** The client application (e.g., your fitness tracker) initiates the process by sending an authorization request to the resource owner's identity provider (e.g., Google, Facebook). This request specifies the desired access permissions.
 
@@ -42,10 +42,10 @@ All Oauth 2.0 flows:
 
 *   Authorization Code
 
-    1. Client initiates the flow and redirects the user to the authorization server
+    1. The client initiates the flow and redirects the user to the authorization server
     2. User authenticates and grants permission
     3. Authorization server redirects user back to client with an authorization code
-    4. Client exchanges the code for an access token
+    4. The client exchanges the code for an access token
     5. Access token grants access to protected resources
 
 
@@ -70,6 +70,6 @@ All Oauth 2.0 flows:
 
     Client Credentials
 
-    1. Client sends its own credentials (client ID and client secret) to authorization server
+    1. Client sends its own credentials (client ID and client secret) to the authorization server
     2. Authorization server validates client credentials and issues an access token
     3. Access token grants access to protected resources

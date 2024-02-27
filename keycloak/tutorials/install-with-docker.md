@@ -24,8 +24,8 @@ KC_HOSTNAME=localhost quay.io/keycloak/keycloak:latest start-auto-build
 
 ### Legend:
 
-* `docker run`: run a Docker container.
-* `--name keycloak`: Assigns the name "keycloak" to the container.
+* `docker run`: Run a Docker container.
+* `--name keycloak`: Assign the name "keycloak" to the container.
 * `-d`: Detaches and runs it in the background.
 * `-p 8080:8080`: Maps port 8080 on the host machine to port 8080 in the container.&#x20;
 * `-e KEYCLOAK_ADMIN=admin`: Sets the environment variable `KEYCLOAK_ADMIN` . This sets the admin username for the Keycloak instance.

@@ -2,30 +2,30 @@
 
 ### CORS
 
-Is likely that you stumbled upon [CORS](../../iam-introduction/iam-protocols/cross-origin-resource-sharing.md) due to an error:
+It is likely that you stumbled upon [CORS](../../iam-introduction/iam-protocols/cross-origin-resource-sharing.md) due to an error:
 
 ```markup
 Access to fetch at 'https://example.com' from origin 'http://example.com'
 has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header 
-is present on the requested resource.If an opaque response serves your needs,
-set the request's mode to 'no-cors'to fetch the resource with CORS disabled.
+is present on the requested resource. If an opaque response serves your needs,
+set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
 ```
 
 This occurs because there's a discrepancy between the headers of the request you're attempting to send to a specific website and the security protocols governing access to that website.
 
 To elaborate, when a website's server receives a request, it needs to verify and control the source of that request. Therefore, if an attacker replicates a legitimate request, such as accessing the website's data, but sends it from an unknown origin, CORS (Cross-Origin Resource Sharing) blocks it as an additional security measure to safeguard the integrity of the website.
 
-This control can be managed in the server-side, where the website is hosted (apache, lighthttpd,  ...) and/or on the frameworks and platforms built-in mechanisms or middleware (keycloak, okta, ....). Here are some examples on how to do it:
+This control can be managed on the server-side, where the website is hosted (apache, lighthttpd,  ...) and/or on the frameworks and platforms built-in mechanisms or middleware (keycloak, okta, ....). Here are some examples on how to do it:
 
-### In apache (windows)
+### In Apache (windows)
 
 1. **Access Apache Configuration:**
    * Navigate to the directory where Apache is installed on your Windows system. This is typically `C:\Program Files\Apache Software Foundation\Apache[version]\`.
-2. **Locate Configuration Files:**
+2. **Locate the configuration files:**
    * Open the `conf` folder within the Apache directory.
    * Look for the `httpd.conf` file, which is the main configuration file for Apache.
 3. **Edit httpd.conf:**
-   * Right-click on `httpd.conf` and open it with a text editor (e.g., Notepad++).
+   * Right-click on `httpd.conf` and open it in a text editor (e.g., Notepad++).
 4. **Enable mod\_headers:**
    *   Before configuring CORS, ensure that the `mod_headers` module is enabled. Look for the following line in `httpd.conf`:
 
@@ -43,7 +43,7 @@ This control can be managed in the server-side, where the website is hosted (apa
            Header set Access-Control-Allow-Headers "Content-Type, Authorization"
        </IfModule>
        ```
-6. **Save Changes:**
+6. **Save the changes:**
    * After making the necessary changes, save the `httpd.conf` file.
 7. **Restart Apache:**
    * To apply the new CORS configuration, restart the Apache server.
@@ -79,7 +79,7 @@ Admin URL->URL to the admin interface of the client. Set this if the client supp
 
 ### CSP
 
-**Why Implement CSP?**
+**Why implement CSP?**
 
 Content Security Policy (CSP) is a powerful security mechanism that mitigates risks associated with Cross-Site Scripting (XSS) attacks, data injection vulnerabilities, and unauthorized resource loading. By defining trusted sources for scripts, styles, images, and other resources, you can significantly improve the security posture of your website.
 

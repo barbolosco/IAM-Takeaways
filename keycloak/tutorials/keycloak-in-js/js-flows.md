@@ -1,6 +1,6 @@
 # js flows
 
-### authorization code flow
+### Authorization code flow
 
 Initiating the call to the authorization endpoint\
 This code snippet demonstrates how to initiate an authentication request to the authorization endpoint. Here, we're setting up the parameters required for the authentication process. The parameters include the response type, client ID, redirect URI, scope, state, nonce, and code challenge for [PKCE ](pkce-implementation.md)(Proof Key for Code Exchange) flow. By including all parameters directly in the URL, we simplify the process for demonstration purposes, showcasing the various parameters that can be passed to the endpoint.
@@ -13,7 +13,7 @@ loginButton.addEventListener('click', async () => {
   const scope = 'openid profile';
   const state = "random"
   localStorage.setItem('clientId',clientId);
-  // Build the authorization URL with parameters
+  // Build the authorization URL with the parameters
   const url = new URL(authUrl);
   url.searchParams.set('response_type', 'code');
   url.searchParams.set('nonce', 'bkmnbgty78dfghytredsx');

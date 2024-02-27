@@ -1,14 +1,14 @@
 # Cross-Origin Resource Sharing
 
-Cross-Origin Resource Sharing (CORS) is a mechanism that allows web browsers to make controlled requests to resources located on a different domain, protocol, or port than the one that served the web page. This flexibility enables websites to leverage resources from various origins for enhanced functionality and user experience, while maintaining security through controlled access.
+Cross-Origin Resource Sharing (CORS) is a mechanism that allows web browsers to make controlled requests to resources located on a different domain, protocol, or port than the one that serves the web page. This flexibility enables websites to leverage resources from various origins for enhanced functionality and user experience, while maintaining security through controlled access.
 
 #### Same-Origin Policy (SOP)
 
 Before diving into CORS, it's essential to understand the Same-Origin Policy (SOP). SOP is a security feature implemented by web browsers to restrict websites from directly accessing resources located on different origins. This restriction prevents malicious scripts from stealing sensitive data or hijacking user sessions.
 
-#### How CORS Works
+#### How CORS works?
 
-1. **Request with Origin Header:** When a web page initiates a request to a resource on a different origin, the browser automatically adds an `Origin` header to the request. This header contains information about the origin of the page making the request.
+1. **Request with Origin Header:** When a web page initiates a request to a resource of a different origin, the browser automatically adds an `Origin` header to the request. This header contains information about the origin of the page making the request.
 2. **Server Response with CORS Headers:** The server receiving the request checks if it has CORS headers configured. These headers specify which origins are allowed to access its resources:
    * **`Access-Control-Allow-Origin`:** This header defines origins that are allowed to make requests to the server. It can be set to `*` to allow any origin, but for security reasons, it's usually restricted to specific origins.
    * Other CORS headers can be used to control:
