@@ -19,6 +19,24 @@ Before diving into CORS, it's essential to understand the Same-Origin Policy (SO
    * **Grants access:** If the origin matches the allowed origins and other conditions are met, the server sends the requested resource along with appropriate CORS headers.
    * **Denies access:** If the origin doesn't match or other conditions aren't met, the server sends an error response, and the browser blocks access to the resource.
 
-#### Preflight Requests (OPTIONS)
+#### Pre-flight Requests (OPTIONS)
 
-For certain requests involving additional headers or sending credentials (e.g., `POST`, `PUT`, `DELETE`), the browser might send a preflight request (using the `OPTIONS` method) to the server before making the actual request. This preflight request allows the server to indicate if the actual request would be allowed, based on its CORS configuration.
+For certain requests involving additional headers or sending credentials (e.g., `POST`, `PUT`, `DELETE`), the browser might send a pre-flight request (using the `OPTIONS` method) to the server before making the actual request. This pre-flight request allows the server to indicate if the actual request would be allowed, based on its CORS configuration.
+
+**Cross-Origin Requests and Security Implications**
+
+Web browsers enforce the Same-Origin Policy (SOP), which restricts web pages from making requests to resources located on different origins (domains, protocols, or ports) unless explicitly permitted. CORS relaxes these restrictions by allowing controlled access to resources from different origins while maintaining security.
+
+**Risks of Misconfigured CORS Policies**
+
+* **Data Exposure**: Without CORS properly configured, sensitive data could be exposed to unauthorized origins, leading to data breaches and privacy violations.
+* **Cross-Site Request Forgery (CSRF)**: Inadequate CORS configuration may enable malicious websites to forge requests from a user's browser to a trusted origin, potentially leading to unauthorized actions or data manipulation.
+* **Information Leakage**: Misconfigured CORS policies might inadvertently leak information about the server's internal structure or sensitive data, providing attackers with valuable insights for further exploitation.
+* **Session Hijacking**: Lack of CORS controls could facilitate session hijacking attacks, where attackers exploit cross-origin requests to steal session tokens and impersonate legitimate users.
+
+**Common CORS Misconfigurations**
+
+* **Wildcard Allowances**: Allowing access from any origin (`*`) without proper validation can open the door to exploitation, as it effectively nullifies CORS protections.
+* **Insufficient Validation**: Failing to validate the `Origin` header or blindly trusting user-supplied values can result in unauthorized access to sensitive resources.
+* **Insecure Headers**: Improper configuration of CORS headers, such as missing or misconfigured `Access-Control-Allow-Origin` headers, can lead to inconsistent enforcement of CORS policies.
+* **Excessive Permissions**: Granting overly broad permissions (e.g., allowing all HTTP methods or headers) increases the attack surface and undermines the principle of least privilege.
