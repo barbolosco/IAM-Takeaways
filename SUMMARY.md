@@ -36,6 +36,8 @@
     * [Keycloak in js](keycloak/tutorials/keycloak-in-js/README.md)
       * [PKCE implementation](keycloak/tutorials/keycloak-in-js/pkce-implementation.md)
       * [js flows](keycloak/tutorials/keycloak-in-js/js-flows.md)
+    * [SMTP server with GMAIL](keycloak/tutorials/smtp-server-with-gmail.md)
+    * [2FA with SMTP email server](keycloak/tutorials/2fa-with-smtp-email-server.md)
     * [CORS and CSP](keycloak/tutorials/cors-and-csp.md)
     * [📬 Postman](keycloak/tutorials/postman.md)
 * [Our project](our-project/README.md)
