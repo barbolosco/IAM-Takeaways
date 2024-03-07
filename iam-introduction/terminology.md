@@ -27,3 +27,7 @@ Key Concepts:
 
 * **Delegation:** The ability of applications to act on the resource owner's behalf by receiving access tokens from the identity provider.
 * **Consent Framework:** A mechanism ensuring transparency and user control by requiring explicit consent from the resource owner before granting access to their data.
+
+Other:
+
+* WebAuthn:  web standard that allows users to securely authenticate to websites using biometric sensors, USB security keys, or built-in authenticators instead of passwords. It enhances security and user experience by reducing reliance on easily compromised passwords.
