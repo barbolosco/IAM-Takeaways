@@ -63,7 +63,7 @@
      * **public:** No client secrets are used, suitable for public-facing applications or browser-based clients.
    * **Root URL:** The base URL of your client application. Keycloak will use this URL when redirecting users after authentication.
    * **Valid Redirect URIs:** Specify all acceptable redirect URIs within your client application where Keycloak can send authentication responses.
-   * **Web Origins:** (Optional) If using CORS (Cross-Origin Resource Sharing), list the allowed origins (URLs) from which your client can make requests.
+   * **Web Origins:** (Optional) If using [CORS ](../tutorials/cors-and-csp.md)(Cross-Origin Resource Sharing), list the allowed origins (URLs) from which your client can make requests.
 6. **Optional Settings (based on your chosen client protocol and access type):**
    * **Client Secret:** (For confidential clients) Generate a strong and unique client secret to be used for authentication.
    * **Access Grant Types:** (For OpenID Connect clients) Select the grant types supported by your client (e.g., authorization code, client credentials). See [guide-to-flows.md](guide-to-flows.md "mention")

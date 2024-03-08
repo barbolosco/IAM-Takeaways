@@ -2,7 +2,7 @@
 
 ### CORS
 
-It is likely that you stumbled upon [CORS](../../iam-introduction/iam-protocols/cross-origin-resource-sharing.md) due to an error:
+It is likely that you stumbled upon [CORS](../../introduction-to-iam/iam-protocols/cross-origin-resource-sharing.md) due to an error:
 
 ```markup
 Access to fetch at 'https://example.com' from origin 'http://example.com'

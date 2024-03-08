@@ -2,7 +2,7 @@
 
 ## Keycloak integration methods
 
-Keycloak can be integrated into JavaScript (or its frameworks like Spring Boot) either through an adapter or by manually calling the server's endpoints using vanilla JavaScript. All [OIDC flows](../../../iam-introduction/iam-protocols/openid-connect/openid-connect-flows/) involve the client requesting access from the server's authorization endpoint. Implementing these calls to the endpoints is simpler with the adapter, but this approach hides the calls within the final script. In other words, you cannot see how the raw calls are made or where they occur.&#x20;
+Keycloak can be integrated into JavaScript (or its frameworks like Spring Boot) either through an adapter or by manually calling the server's endpoints using vanilla JavaScript. All [OIDC flows](../../../introduction-to-iam/iam-protocols/openid-connect/openid-connect-flows/) involve the client requesting access from the server's authorization endpoint. Implementing these calls to the endpoints is simpler with the adapter, but this approach hides the calls within the final script. In other words, you cannot see how the raw calls are made or where they occur.&#x20;
 
 ```html
 <script src="http://localhost:8085/js/keycloak.js"></script>
@@ -22,7 +22,7 @@ Keycloak can be integrated into JavaScript (or its frameworks like Spring Boot) 
 });
 </code></pre>
 
-Now, I'll provide an example of calling an authorization endpoint and a token endpoint, focusing on [all possible parameters](../../../iam-introduction/iam-protocols/openid-connect/parameters-walk-trough.md) for each call and how they are configured. We'll delve into where to correctly place each parameter for different flow types in the subsequent "flows" section. To access a Keycloak cheat sheet listing accepted OIDC flow parameters, visit `http://{host}:{port}/realms/{realm}/.well-known/openid-configuration` while Keycloak is running.
+Now, I'll provide an example of calling an authorization endpoint and a token endpoint, focusing on [all possible parameters](../../../introduction-to-iam/iam-protocols/openid-connect/parameters-walk-trough.md) for each call and how they are configured. We'll delve into where to correctly place each parameter for different flow types in the subsequent "flows" section. To access a Keycloak cheat sheet listing accepted OIDC flow parameters, visit `http://{host}:{port}/realms/{realm}/.well-known/openid-configuration` while Keycloak is running.
 
 ### Authorization and token endpoint calls
 
