@@ -1,10 +1,10 @@
 # OAuth 2.0
 
-Ever borrowed a friend's car? You trust them, but you wouldn't just hand over the keys, right? You'd likely specify where they can go and what they can do with it. OAuth 2.0 works similarly for your online accounts.
+Have you ever borrowed a friend's car? Even if you trusted the person asking for it, you wouldn't just hand over the keys, would you? You'd probably tell them where to go and what to do with it. OAuth 2.0 works the same way with your online accounts.
 
-Imagine wanting to log into a new app using Facebook. Instead of giving the app your Facebook password (the entire car!), OAuth 2.0 acts as a trusted middleman. It connects with Facebook, verifies you, and asks what information you're okay with sharing (the specific destination and rules). The app then gets a temporary "key" to access that information, not your entire password.
+Imagine you want to log in to a new app using Facebook. Instead of giving the app your Facebook password (the whole car!), OAuth 2.0 acts as a trusted intermediary. It connects to Facebook, verifies you, and asks what information you're willing to share (the specific destination and rules). The app is then given a temporary "key" to access that information, not your full password.&#x20;
 
-This keeps your data safe and gives you control. No more remembering countless passwords, and you can choose what each app sees, like just your name and profile picture for the borrowing example. So next time you see "Login with Google" on an app, remember the invisible security guard – OAuth 2.0 – ensuring you share your data safely and conveniently.
+This keeps your data secure and puts you in control. No more remembering countless passwords, and you can choose what each app sees, like just your name and profile picture for the borrowing example. So the next time you see "Sign in with Google" on an app, remember the invisible guardian - OAuth 2.0 - that makes sharing your information safe and convenient.
 
 #### Why Use OAuth 2.0?
 

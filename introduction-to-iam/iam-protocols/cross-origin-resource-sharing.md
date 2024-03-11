@@ -1,10 +1,10 @@
 # Cross-Origin Resource Sharing
 
-Cross-Origin Resource Sharing (CORS) is a mechanism that allows web browsers to make controlled requests to resources located on a different domain, protocol, or port than the one that serves the web page. This flexibility enables websites to leverage resources from various origins for enhanced functionality and user experience, while maintaining security through controlled access.
+Cross-Origin Resource Sharing (CORS) is a mechanism that enables web browsers to make controlled requests to resources located on a different domain, protocol, or port than the one that serves the web page. This allows websites to use resources from various origins for enhanced functionality and user experience, while maintaining security through controlled access.
 
 #### Same-Origin Policy (SOP)
 
-Before diving into CORS, it's essential to understand the Same-Origin Policy (SOP). SOP is a security feature implemented by web browsers to restrict websites from directly accessing resources located on different origins. This restriction prevents malicious scripts from stealing sensitive data or hijacking user sessions.
+To fully comprehend CORS, it is crucial to first understand the Same-Origin Policy (SOP). The SOP is a security measure enforced by web browsers that limits websites from accessing resources on different origins. This restriction is in place to prevent malicious scripts from stealing sensitive data or hijacking user sessions.
 
 #### How CORS works?
 
@@ -25,7 +25,7 @@ For certain requests involving additional headers or sending credentials (e.g., 
 
 **Cross-Origin Requests and Security Implications**
 
-Web browsers enforce the Same-Origin Policy (SOP), which restricts web pages from making requests to resources located on different origins (domains, protocols, or ports) unless explicitly permitted. CORS relaxes these restrictions by allowing controlled access to resources from different origins while maintaining security.
+To understand CORS, it is important to first understand the Same-Origin Policy (SOP). The SOP is a security measure enforced by web browsers that limits websites from accessing resources on different origins. This restriction is in place to prevent malicious scripts from stealing sensitive data or hijacking user sessions.
 
 **Risks of Misconfigured CORS Policies**
 

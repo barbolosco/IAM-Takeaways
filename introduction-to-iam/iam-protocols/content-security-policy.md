@@ -1,10 +1,10 @@
 # Content Security Policy
 
-Content Security Policy (CSP) is a security feature that allows web developers to control the resources (scripts, images, stylesheets, fonts, etc.) that can be loaded on their web pages. By implementing a CSP policy, developers can significantly mitigate the risk of Cross-Site Scripting (XSS) attacks and other web vulnerabilities.
+Content Security Policy (CSP) is a security feature that enables web developers to control the resources that can be loaded on their web pages. Implementing a CSP policy can significantly reduce the risk of Cross-Site Scripting (XSS) attacks and other web vulnerabilities.
 
 #### How CSP Works
 
-1. **CSP Policy Definition:** Developers define a CSP policy using directives in the HTTP headers of their web server configuration. These directives specify which sources are allowed to load different types of resources:
+1. **CSP Policy Definition:** Content Security Policy (CSP) is a security feature that allows web developers to control the resources that can be loaded on their web pages. Implementing a CSP policy can greatly reduce the risk of Cross-Site Scripting (XSS) attacks and other web vulnerabilities.
    * **`script-src`:** Defines allowed sources for scripts (e.g., your own domain, trusted third-party libraries).
    * **`img-src`, `style-src`, `font-src`:** Similar directives control the loading of images, stylesheets, and fonts, respectively.
    * Other directives exist to control various resources like frames, objects, and media.
@@ -14,8 +14,8 @@ Content Security Policy (CSP) is a security feature that allows web developers t
 
 #### Benefits of CSP
 
-* **Enhanced Security:** By restricting script execution to allowed sources, CSP significantly reduces the risk of XSS attacks, a common web security threat where malicious scripts are injected into websites to steal user data or redirect users to malicious sites.
-* **Improved User Trust:** Implementing a well-defined CSP policy demonstrates a commitment to user data security, fostering trust and confidence among users.
+* **Enhanced Security:** CSP significantly reduces the risk of XSS attacks, a common web security threat, by restricting script execution to allowed sources.
+* **Improved User Trust:** Implementing a clear and well-defined CSP policy demonstrates a commitment to user data security, which fosters trust and confidence among users.
 
 **CSP Policy Definition**:
 
