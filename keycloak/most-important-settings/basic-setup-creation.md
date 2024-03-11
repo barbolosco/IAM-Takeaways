@@ -3,7 +3,7 @@
 ## Realm
 
 1. **Access the Admin Console:**
-   * Open your web browser and navigate to the Keycloak Admin Console URL, typically `http://localhost:8080/auth/admin`.
+   * Open your web browser at  `http://localhost:8080/`and navigate to the Keycloak Admin Console URL, typically by clicking on the "Administration Console".
    * Log in with administrative credentials.
 2. **Create a new realm:**
    * Click the "master" realm name in the top-left corner.
@@ -57,10 +57,9 @@
    * **Client Protocol:** Choose the appropriate protocol(s) supported by your client. Common options include:
      * **OpenID Connect:** For web-based applications that need user authentication and access tokens.
      * **saml:** For Single Sign-On (SSO) with SAML-based applications.
-     * **bearer-only:** For server-to-server communication using an access token.
    * **Access Type:** Select the level of access granted to the client based on its security requirements:
-     * **confidential:** Client secrets are used for authentication, suitable for highly secure applications.
-     * **public:** No client secrets are used, suitable for public-facing applications or browser-based clients.
+     * **confidential:** Client secrets are used for authentication, it's suitable for highly secure applications.
+     * **public:** No client secrets are used, suitable for public-facing applications or browser-based clients or if you are using PKCE authentication.
    * **Root URL:** The base URL of your client application. Keycloak will use this URL when redirecting users after authentication.
    * **Valid Redirect URIs:** Specify all acceptable redirect URIs within your client application where Keycloak can send authentication responses.
    * **Web Origins:** (Optional) If using [CORS ](../tutorials/cors-and-csp.md)(Cross-Origin Resource Sharing), list the allowed origins (URLs) from which your client can make requests.
