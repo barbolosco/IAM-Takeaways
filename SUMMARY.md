@@ -51,4 +51,7 @@
     * [🪶 Apache lounge](our-project/tools-used/apache-lounge.md)
     * [🐬 My sql](our-project/tools-used/my-sql.md)
     * [📬 Postman](our-project/tools-used/postman.md)
+    * [Vue](our-project/tools-used/vue.md)
+    * [Node js](our-project/tools-used/node-js.md)
+    * [Typescript](our-project/tools-used/typescript.md)
     * [Adapter](our-project/tools-used/adapter.md)
